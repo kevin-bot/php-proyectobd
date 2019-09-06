@@ -7,7 +7,9 @@
 		
 		 $imagen= addslashes(file_get_contents($_FILES['txt_nuevaAcImagen']['tmp_name']));
 
-		$sql="INSERT INTO cultura (nombre,categoria,titulo,texto,imagen)values('teatro',1,'$_POST[txt_nuevaActitulo]','$_POST[txt_nuevaAcTexo]','$imagen')";
+		
+
+		$resultado=mysqli_query($conexion,"INSERT INTO cultura (nombre,categoria,titulo,texto,imagen)values('teatro',1,'$_POST[txt_nuevaActitulo]','$_POST[txt_nuevaAcTexo]','$imagen')");
 
 		header("location:./../home.html");
 			
