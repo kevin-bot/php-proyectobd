@@ -2,9 +2,9 @@
 	
 	try {
 		
-		$nom_bd="proyectobd";
-		$nom_usuario="root";
-		$contraseña_usu="";
+		$nom_bd="tuinvest_bienestaruniversitario";
+		$nom_usuario="tuinvest_usuario";
+		$contraseña_usu="carlos*usuario*kevin";
 		$direccion_host="localhost";
 
 		$conexion=new PDO("mysql:host=$direccion_host;dbname=$nom_bd", "$nom_usuario", "$contraseña_usu"); 

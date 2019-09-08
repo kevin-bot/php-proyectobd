@@ -52,14 +52,15 @@
                         <ul class="full-width">
 
                         
-                            <li><a href="Cmusica.php" class="waves-effect waves-light">Musica</a></li>
+                           <li><a  href="CMusica.php" class="waves-effect waves-light" id="se_ecoge_musica">Musica</a></li>
                             <li class="NavLateralDivider"></li>
+
                             <li><a href="CTeatro.php" class="waves-effect waves-light">Teatro</a></li>
                             <li class="NavLateralDivider"></li>
-                            <li><a href="Cdanza.php" class="waves-effect waves-light">Danza</a></li>
+                            <li><a href="CDanza.php" class="waves-effect waves-light">Danza</a></li>
                             <li class="NavLateralDivider"></li>
                             <li><a href="CCanto.php" class="waves-effect waves-light">Canto</a></li>
-                            <li class="NavLateralDivider"></li>                            
+                            <li class="NavLateralDivider"></li>                             
                         </ul>
 
                     </li>
@@ -71,7 +72,7 @@
 
                         <ul class="full-width">
 
-                            <li><a href="DfutbolSala.php" class="waves-effect waves-light">Futbol sala</a></li>
+                             <li><a href="DfutbolSala.php" class="waves-effect waves-light">Futbol sala</a></li>
                             <li class="NavLateralDivider"></li>
                             <li><a href="DBaloncesto.php" class="waves-effect waves-light">Baloncesto</a></li>
                             <li class="NavLateralDivider"></li>
@@ -79,7 +80,7 @@
                             <li class="NavLateralDivider"></li>
                             <li><a href="DVoleybol.php" class="waves-effect waves-light">Voleybol</a></li>
                             <li class="NavLateralDivider"></li>
-                            <li><a href="DTenisDeMesa.php" class="waves-effect waves-light">Tenis de mesa</a></li>
+                            <li><a href="php/DTenisdeMesa.php" class="waves-effect waves-light">Tenis de mesa</a></li>
                             <li class="NavLateralDivider"></li>
                             <li><a href="DAjedrez.php" class="waves-effect waves-light">Ajedrez</a></li>
                             <li class="NavLateralDivider"></li>
