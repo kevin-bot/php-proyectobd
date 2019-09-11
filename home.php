@@ -1,12 +1,13 @@
-<!-- 
-* Copyright 2016 Carlos Eduardo Alfaro Orellana
--->
+<?php session_start();  if(!$_SESSION["Usuario_Activo"]){header("location:index.html");}?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
 	<title>Univalle</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     
      <!-- Normalize CSS -->
 	<link rel="stylesheet" href="css/normalize.css">
@@ -35,6 +36,7 @@
 
             <header class="NavLateral-title full-width center-align #d50000 red accent-4">
                 ADMINISTRACION <i class="zmdi zmdi-close NavLateral-title-btn ShowHideMenu"></i>
+
             </header>
 
             <figure class="full-width NavLateral-logo">
@@ -52,7 +54,7 @@
                         <ul class="full-width">
 
                         
-                            <li> <a  href="php/CMusica.php" class="waves-effect waves-light" id="se_ecoge_musica">Musica</a></li>
+                            <li> <a  href="php/CMusica.php" class="waves-effect waves-light" id="se_ecoge_musica">Música</a></li>
                             <li class="NavLateralDivider"></li>
 
                             <li><a href="php/CTeatro.php" class="waves-effect waves-light">Teatro</a></li>
@@ -200,7 +202,7 @@
         </section>-->
 
         <div class="row">
-            <!-- Tiles -->
+    
             <article class="col s12">
                 <div class="full-width center-align" style="margin: 40px 0;">
                     
@@ -208,8 +210,8 @@
 
                         <div class="tile-icon"><i class="zmdi zmdi-mail-send"></i></div>
                         <div class="tile-caption">
-                            <span class="center-align">Musica</span>
-                            <p class="center-align">Seccion Musica</p>                               
+                            <span class="center-align">Música</span>
+                            <p class="center-align">Seccion Música</p>                               
                         </div>
 
                         <div class="tile-content">
@@ -254,7 +256,7 @@
                                 <p><small class="text-muted"><i class="zmdi zmdi-time"></i> 11 hours ago via Twitter</small></p>
                             </div>
                             <div class="timeline-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laboriosam dolor perspiciatis omnis exercitationem. Beatae, officia pariatur? Est cum veniam excepturi. Maiores praesentium, porro voluptas suscipit facere rem dicta, debitis.</p>
+                                <p>Música Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laboriosam dolor perspiciatis omnis exercitationem. ñeña Beatae, officia pariatur? Est cum veniam excepturi. Maiores praesentium, porro voluptas suscipit facere rem dicta, debitis.</p>
                             </div>
                         </div>
                     </li>

@@ -1,9 +1,8 @@
-<!-- 
-* Copyright 2016 Carlos Eduardo Alfaro Orellana
--->
+<?php session_start();  if(!$_SESSION["Usuario_Activo"]){header("location:index.html");}?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Univalle</title>
@@ -63,7 +62,7 @@
                         <ul class="full-width">
 
                         
-                           <li><a  href="CMusica.php" class="waves-effect waves-light" id="se_ecoge_musica">Musica</a></li>
+                           <li><a  href="CMusica.php" class="waves-effect waves-light" id="se_ecoge_musica">Música</a></li>
                             <li class="NavLateralDivider"></li>
 
                             <li><a href="CTeatro.php" class="waves-effect waves-light">Teatro</a></li>
@@ -152,12 +151,12 @@
        <!--Input fields-->
         <div class="container">
             <div class="row">
-                <h2 class="center-align">Nueva actividad Musica</h2>
+                <h2 class="center-align">Nueva actividad Música</h2>
                 <form class="col s12" name="form_New_activity" method="post" action="CMusicaLogica.php" enctype="multipart/form-data">
                     <div class="row">
                         <div class="input-field col s12">
-                            <input placeholder="Escriba el titulo de 30 caracteres" id="first_name" type="text" class="validate" maxlength="30" name="txt_nuevaActitulo" required="">
-                            <label for="first_name">Titulo</label>
+                            <input placeholder="Escriba el titulo de 30 caracteres" id="first_name" type="text" class="validate" maxlength="30" name="txt_nuevaActitulo" required="" maxlength="30">
+                            <label for="first_name">Título</label>
                         </div>                    
                     </div>
                     <div class="row">
@@ -167,14 +166,14 @@
                                    <input type="file"  name="txt_nuevaAcImagen" multiple>
                                </div>
                               <div class="file-path-wrapper">
-                                   <input class="file-path validate" type="text" placeholder="Upload one or more files" required="">
+                                   <input class="file-path validate" type="text" placeholder="Upload one or more files" >
                               </div>
                                </div>
                     </div>
                     <div class="row">
                             <div class="input-field col s12">
-                                <textarea id="textarea1" class="materialize-textarea" name="txt_nuevaAcTexo" required=""></textarea>
-                                <label for="textarea1">Textarea</label>
+                                <textarea id="textarea1" class="materialize-textarea" name="txt_nuevaAcTexo" required="" maxlength="200"></textarea>
+                                <label for="textarea1">Texto</label>
                             </div>
                     </div>
 

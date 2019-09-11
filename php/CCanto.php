@@ -1,6 +1,5 @@
-<!-- 
-* Copyright 2016 Carlos Eduardo Alfaro Orellana
--->
+
+<?session_start();  if(!$_SESSION["Usuario_Activo"]){header("location:./../index.html");}?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -162,7 +161,7 @@
                     </div>
                     <div class="row">
                             <div class="input-field col s12">
-                                <textarea id="textarea1" class="materialize-textarea" name="txt_nuevaAcTexo" required=""></textarea>
+                                <textarea id="textarea1" class="materialize-textarea" name="txt_nuevaAcTexo" required="" maxlength="200"></textarea>
                                 <label for="textarea1">Textarea</label>
                             </div>
                     </div>

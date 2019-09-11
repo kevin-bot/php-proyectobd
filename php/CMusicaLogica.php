@@ -1,5 +1,7 @@
 <?php
-
+	echo '<!DOCTYPE html> <html lang="es">';
+	echo '<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />';
+	echo '</head>';
 
 	require_once('conexion.php');
 		
@@ -10,9 +12,9 @@
 		
 		$resultado=mysqli_query($conexion,"INSERT INTO cultura (nombre,categoria,titulo,texto,imagen)values('musica',1,'$_POST[txt_nuevaActitulo]','$_POST[txt_nuevaAcTexo]','$imagen')");
 			
-			//header("location:./../home.html");
+			header("location:./../home.html");
 
-		echo $_POST['txt_nuevaActitulo'];
+			echo $_POST['txt_nuevaActitulo'];
 
 	}else if(isset($_POST['btnactualizar'])){
 		

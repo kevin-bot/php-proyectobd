@@ -1,6 +1,4 @@
-<!-- 
-* Copyright 2016 Carlos Eduardo Alfaro Orellana
--->
+<?php session_start();  if(!$_SESSION["Usuario_Activo"]){header("location:index.html");}?>
 <!DOCTYPE html>
 <html lang="es">
 <head>

@@ -5,20 +5,14 @@
 	$usu=$_POST['txtusu'];
 	$con=$_POST['txtcon'];
 	
-		$sql="select * from administrador where usuario like '$usu'";
+		$sql="select * from administrador where usuario like '$usu' and password like '$con' and estado like 1 ";
 		$res=mysqli_query($conexion,$sql);
-		$linea=mysqli_fetch_array($res);
-	    $usuarioBD=$linea['usuario'];
-		$contraseñaBD=$linea['password'];
-		$estadoBD=$linea['estado'];
-		$nombreBD=$fila['nombre'];
-
-	if($usuarioBD==$usu && $contraseñaBD==$con && $estadoBD==1){
+	
+	if($linea=mysqli_fetch_array($res)){
 			 session_start();                    
-             $_SESSION["Usuario_Activo"]=$nombreBD;
+             $_SESSION["Usuario_Activo"]=$linea['nombre'];
 
-
-			header("location:./../home.html");
+			header("location:./../home.php");
 
 		}
 		else{

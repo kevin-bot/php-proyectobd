@@ -1,4 +1,7 @@
 <?php
+
+
+
 	$conexion=mysqli_connect("localhost","root","","proyectobd")
 
 	or die("No se puede conectar");

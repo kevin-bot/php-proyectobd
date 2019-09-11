@@ -1,4 +1,9 @@
 <?php
+
+	echo '<!DOCTYPE html> <html lang="es">';
+	echo '<head><meta charset="utf-8"/><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />';
+	echo '</head>';
+	
 	$json=array();
 
 		include "conexion.php"	;
@@ -10,7 +15,7 @@
 		if($resultado=$sentencia->fetchAll(PDO::FETCH_ASSOC)){
 		
 			foreach ($resultado as $cadadato) {
-				$result['titulo']=$cadadato['titulo'];
+				$result['título']=$cadadato['titulo'];
 				$result['texto']=$cadadato['texto'];
 				$result['ima']=base64_encode($cadadato['imagen']);			
 						$json[]=$result;
