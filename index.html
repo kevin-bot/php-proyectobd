@@ -3,8 +3,8 @@
 -->
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
+<head>	
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>Univalle app</title>
 	
@@ -36,11 +36,11 @@
 
         <form action="php/validarLogin.php" method="post">
             <div class="input-field">
-                <input id="UserName" type="text" class="validate" name="txtusu" required="">
+                <input id="UserName" type="text" class="validate" name="txtusu" required="" maxlength="30">
                 <label for="UserName"><i class="zmdi zmdi-account"></i>&nbsp; Nombre</label>
             </div>
             <div class="input-field col s12">
-                <input id="Password" type="password" class="validate" name="txtcon" required="">
+                <input id="Password" type="password" class="validate" name="txtcon" required="" maxlength="8">
                 <label for="Password"><i class="zmdi zmdi-lock"></i>&nbsp; Contraseña</label>
             </div>
             <button class="waves-effect waves-teal btn-flat">Ingresar &nbsp; <i class="zmdi zmdi-mail-send"></i></button>

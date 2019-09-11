@@ -1,7 +1,8 @@
 <?php
 
-	require_once('conexion.php');
 
+	require_once('conexion.php');
+		
 	if(isset($_POST['btncrear'])){
 
 		
@@ -9,7 +10,9 @@
 		
 		$resultado=mysqli_query($conexion,"INSERT INTO cultura (nombre,categoria,titulo,texto,imagen)values('musica',1,'$_POST[txt_nuevaActitulo]','$_POST[txt_nuevaAcTexo]','$imagen')");
 			
-			header("location:./../home.html");
+			//header("location:./../home.html");
+
+		echo $_POST['txt_nuevaActitulo'];
 
 	}else if(isset($_POST['btnactualizar'])){
 		
