@@ -32,7 +32,7 @@
         <div class="NavLateral-content full-width ">
 
             <header class="NavLateral-title full-width center-align #d50000 red accent-4">
-                ADMINISTRACION <i class="zmdi zmdi-close NavLateral-title-btn ShowHideMenu"></i>
+                ADMINISTRACÍON <i class="zmdi zmdi-close NavLateral-title-btn ShowHideMenu"></i>
             </header>
 
             <figure class="full-width NavLateral-logo">
@@ -50,7 +50,7 @@
                         <ul class="full-width">
 
                         
-                           <li><a  href="CMusica.php" class="waves-effect waves-light" id="se_ecoge_musica">Musica</a></li>
+                           <li><a  href="CMusica.php" class="waves-effect waves-light" id="se_ecoge_musica">Música</a></li>
                             <li class="NavLateralDivider"></li>
 
                             <li><a href="CTeatro.php" class="waves-effect waves-light">Teatro</a></li>
@@ -70,7 +70,7 @@
 
                         <ul class="full-width">
 
-                             <li><a href="DfutbolSala.php" class="waves-effect waves-light">Futbol sala</a></li>
+                             <li><a href="DfutbolSala.php" class="waves-effect waves-light">Fútbol sala</a></li>
                             <li class="NavLateralDivider"></li>
                             <li><a href="DBaloncesto.php" class="waves-effect waves-light">Baloncesto</a></li>
                             <li class="NavLateralDivider"></li>
@@ -84,14 +84,14 @@
                             <li class="NavLateralDivider"></li>
                             <li><a href="DAtletismo.php" class="waves-effect waves-light">Atletismo</a></li>
                             <li class="NavLateralDivider"></li>
-                            <li><a href="DFutbol.php" class="waves-effect waves-light">Futbol</a></li>
+                            <li><a href="DFutbol.php" class="waves-effect waves-light">Fútbol</a></li>
                         </ul>   
 
                     </li>
 
                     <li class="NavLateralDivider"></li>
                     <li>
-                        <a href="#" class="NavLateral-DropDown  waves-effect waves-light"><i class="zmdi zmdi-widgets zmdi-hc-fw"></i> <i class="zmdi zmdi-chevron-down NavLateral-CaretDown"></i> Exito Academico</a>
+                        <a href="#" class="NavLateral-DropDown  waves-effect waves-light"><i class="zmdi zmdi-widgets zmdi-hc-fw"></i> <i class="zmdi zmdi-chevron-down NavLateral-CaretDown"></i> Exíto Academico</a>
                         <ul class="full-width">
                             <li><a href="button.html" class="waves-effect waves-light">Uno</a></li>
                             <li class="NavLateralDivider"></li>
@@ -144,7 +144,7 @@
                     <div class="row">
                         <div class="input-field col s12">
                             <input placeholder="Escriba el titulo de 30 caracteres" id="first_name" type="text" class="validate" maxlength="30" name="txt_nuevaActitulo" required="">
-                            <label for="first_name">Titulo</label>
+                            <label for="first_name">Título</label>
                         </div>                    
                     </div>
                     <div class="row">
@@ -187,7 +187,7 @@
                         <div class="input-field col s12">
                             <input placeholder="Escriba el titulo de 30 caracteres" id="first_name" type="text" class="validate" maxlength="30" name="txt_ActuActitulo"
                                 required="">
-                            <label for="first_name">Titulo</label>
+                            <label for="first_name">Título</label>
                         </div>                    
                     </div>
                     <div class="row">
