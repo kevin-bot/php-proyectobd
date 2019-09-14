@@ -35,7 +35,7 @@
         <div class="NavLateral-content full-width ">
 
             <header class="NavLateral-title full-width center-align #d50000 red accent-4">
-                ADMINISTRACION <i class="zmdi zmdi-close NavLateral-title-btn ShowHideMenu"></i>
+                ADMINISTRACIÓN <i class="zmdi zmdi-close NavLateral-title-btn ShowHideMenu"></i>
 
             </header>
 
@@ -201,111 +201,31 @@
             </a>  
         </section>-->
 
-        <div class="row">
-    
-            <article class="col s12">
-                <div class="full-width center-align" style="margin: 40px 0;">
-                    
-                    <div class="tile">
-
-                        <div class="tile-icon"><i class="zmdi zmdi-mail-send"></i></div>
-                        <div class="tile-caption">
-                            <span class="center-align">Música</span>
-                            <p class="center-align">Seccion Música</p>                               
+                <div class="row" style="">
+                    <div class="col s12 center-align">
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="assets/img/logounivalle.jpg">
+                          <span class="card-title">Caicedonia</span>
                         </div>
-
-                        <div class="tile-content">
-                                                                                
-                               <a href="#" class="tile-link waves-effect waves-light">View Details  <i class="zmdi zmdi-caret-right-circle"></i></a>
+                        <div class="card-content">
+                          <p>La universidad del valle sede caicedonia implemeta es app para gestionar </p>
                         </div>
-                        <div class="tile-content">
-                                                                                
-                               <a href="#" class="tile-link waves-effect waves-light">View Details  <i class="zmdi zmdi-caret-right-circle"></i></a>
+                        <div class="card-action">
+                          <a href="#">This is a link</a>
                         </div>
-
+                      </div>
                     </div>
-                    <div class="tile">
-                        <div class="tile-icon"><i class="zmdi zmdi-shopping-cart"></i></div>
-                        <div class="tile-caption">
-                            <span class="center-align">99</span>
-                            <p class="center-align">Lorem ipsum</p>   
-                        </div>
-                        <a href="#" class="tile-link waves-effect waves-light">View Details &nbsp; <i class="zmdi zmdi-caret-right-circle"></i></a>
-                    </div>
-                    <div class="tile">
-                        <div class="tile-icon"><i class="zmdi zmdi-card"></i></div>
-                        <div class="tile-caption">
-                            <span class="center-align">17</span>
-                            <p class="center-align">Lorem ipsum</p>   
-                        </div>
-                        <a href="#" class="tile-link waves-effect waves-light">View Details &nbsp; <i class="zmdi zmdi-caret-right-circle"></i></a>
-                    </div>
-                </div>   
-            </article>
+                  </div>
 
-            <!-- Timeline -->
-            <article class="col s12">
-                <h4>Responsive Timeline</h4>
-                <hr>
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-badge bg-info"><i class="zmdi zmdi-twitter"></i></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h5 class="timeline-title">Lorem ipsum dolor</h5>
-                                <p><small class="text-muted"><i class="zmdi zmdi-time"></i> 11 hours ago via Twitter</small></p>
-                            </div>
-                            <div class="timeline-body">
-                                <p>Música Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laboriosam dolor perspiciatis omnis exercitationem. ñeña Beatae, officia pariatur? Est cum veniam excepturi. Maiores praesentium, porro voluptas suscipit facere rem dicta, debitis.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-badge bg-primary"><i class="zmdi zmdi-facebook"></i></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h5 class="timeline-title">Lorem ipsum dolor</h5>
-                                <p><small class="text-muted"><i class="zmdi zmdi-time"></i> 10 hours ago via Facebook</small></p>
-                            </div>
-                            <div class="timeline-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolorem quibusdam, tenetur commodi provident cumque magni voluptatem libero, quis rerum. Fugiat esse debitis optio, tempore. Animi officiis alias, officia repellendus.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-badge bg-success"><i class="zmdi zmdi-whatsapp"></i></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h5 class="timeline-title success">Lorem ipsum dolor</h5>
-                                <p><small class="text-muted"><i class="zmdi zmdi-time"></i> 9 hours ago via Whatsapp</small></p>
-                            </div>
-                            <div class="timeline-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laboriosam dolor perspiciatis omnis exercitationem. Beatae, officia pariatur? Est cum veniam excepturi. Maiores praesentium, porro voluptas suscipit facere rem dicta, debitis.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-badge bg-danger"><i class="zmdi zmdi-pinterest"></i></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h5 class="timeline-title">Lorem ipsum dolor</h5>
-                                <p><small class="text-muted"><i class="zmdi zmdi-time"></i> 8 hours ago via Pinterest</small></p>
-                            </div>
-                            <div class="timeline-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolorem quibusdam, tenetur commodi provident cumque magni voluptatem libero, quis rerum. Fugiat esse debitis optio, tempore. Animi officiis alias, officia repellendus.</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </article>
-        </div>
+            
 
         <!-- Footer -->   
         <footer class="footer-MaterialDark">
             <div class="container">
                 <div class="row">
                     <div class="col l6 s12">
-                        <h5 class="white-text">Footer Content</h5>
+                        <h5 class="white-text">Univalle caicedonia</h5>
                         <p class="grey-text text-lighten-4">
                             To better support on CSS components and icons, please visit the official websites of the technologies used.
                             <br>
@@ -313,7 +233,7 @@
                         </p>
                     </div>
                     <div class="col l4 offset-l2 s12">
-                        <h5 class="white-text">Technologies used</h5>
+                        <h5 class="white-text">Gestion administrativa</h5>
                         <ul>
                             <li><a class="grey-text text-lighten-3" href="http://materializecss.com/">Materialize</a></li>
                             <li><a class="grey-text text-lighten-3" href="http://zavoloklom.github.io/material-design-iconic-font/icons.html">Material Design Iconic Font</a></li>
@@ -326,7 +246,7 @@
             <div class="NavLateralDivider"></div>
             <div class="footer-copyright">
                 <div class="container center-align">
-                    © 2016 Carlos Eduardo Alfaro Orellana
+                    © 2019 Universidad del valle sede caicedonia
                 </div>
             </div>
         </footer>

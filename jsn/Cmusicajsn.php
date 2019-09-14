@@ -1,12 +1,8 @@
 <?php
 
-	echo '<!DOCTYPE html> <html lang="es">';
-	echo '<head><meta charset="utf-8"/><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />';
-	echo '</head>';
-	
 	$json=array();
 
-		include "conexion.php"	;
+		require_once('conexion.php');
 
 		$sentencia=$conexion->prepare("SELECT * FROM cultura  where nombre like 'musica' order by id desc limit 10");
 
@@ -15,7 +11,7 @@
 		if($resultado=$sentencia->fetchAll(PDO::FETCH_ASSOC)){
 		
 			foreach ($resultado as $cadadato) {
-				$result['título']=$cadadato['titulo'];
+				$result['titulo']=$cadadato['titulo'];
 				$result['texto']=$cadadato['texto'];
 				$result['ima']=base64_encode($cadadato['imagen']);			
 						$json[]=$result;
@@ -26,6 +22,7 @@
 			$result['texto']="No texto";
 			$json['Actividad'][]=$result;
 		}
-				
-		echo json_encode($json);
+
+		echo json_encode($json,JSON_UNESCAPED_UNICODE)	;
+		
 ?>

@@ -178,11 +178,68 @@
         </div>
 
                 <hr>
+                <?php
+                require_once("conexion.php");
+                $resultado=mysqli_query($conexion,"SELECT * FROM cultura where nombre='teatro' ")                                 
+                ?>   
+
+            <script type="text/javascript">
+                               
+                
+                function mikevin(){
+                        var titulo=document.getElementById('txttitulobd').text;   
+                        var texto=document.getElementById('txttextobd').value;                                                 
+                        document.getElementById('txttitulo').value=titulo;
+                        document.getElementById('txttexto').value=texto;                                                
+                }
+
+            </script>  
                 
        <div class="container">
             <div class="row">
                 <h2 class="center-align">Actualizar actividad</h2>
-                <form class="col s12" name="form_New_activity" method="post" action="CMusicaLogica.php">
+                <form class="col s12" name="form_New_activity" method="post" action="CMusicaLogica.php" enctype="multipart/form-data">
+
+                <div class="container" style="margin-bottom: 100px;"> 
+                    <div class="col s12">
+                        <table class="striped">                        
+                            <thead>
+                                <tr>
+                                    <th data-field="id">Id</th>
+                                    <th data-field="id">Titulo</th>
+                                    <th data-field="name">Texto</th>
+                                    <th data-field="price">Imagen</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <?php
+                                     while($fila=mysqli_fetch_array($resultado)){                                
+                                echo '<tr>';
+                                echo '<td id="txttextobd">'.$fila['id'].'</td>';
+                                    echo '<td><a href="#" id="txttitulobd" onclick="mikevin()">'.$fila['titulo'].'<a></td>';
+                                    echo '<td id="txttextobd">'.$fila['texto'].'</td>';
+                                    echo '<td>img</td>';
+                                echo '</tr>';
+                                }
+                                ?>                            
+                            </tbody>
+                        </table>
+                    </div>
+                </div><br>
+
+            
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input placeholder="Escriba el id del la actividad a actualizar" id="txt_buscar" type="text" class="validate" maxlength="30" name="txt_buscarid"
+                                required="">
+                            <label for="first_name">Buscar</label>                            
+                        </div>  
+              
+                    </div> 
+
+
+
                     <div class="row">
                         <div class="input-field col s12">
                             <input placeholder="Escriba el titulo de 30 caracteres" id="first_name" type="text" class="validate" maxlength="30" name="txt_ActuActitulo"
@@ -211,6 +268,32 @@
                     <div class="row">                  
                       <div class="input-field col s6 center-align">
                          <button class="btn waves-effect waves-light" type="submit" name="btnactualizar" value="formCrear">Actualizar
+                        <i class="zmdi zmdi-mail-send"></i>
+                        </button>
+                    </div>
+
+
+                    </div>
+                </form>  
+            </div>
+        </div>
+        <hr>
+         <div class="container">
+            <div class="row">
+                <h2 class="center-align">Eliminar actividad</h2>
+                <form class="col s12" name="form_New_activity" method="post" action="CMusicaLogica.php" enctype="multipart/form-data">
+                    
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input placeholder="Escriba el id del la actividad a eliminar" id="txt_buscar" type="text" class="validate" maxlength="30" name="txt_buscaridElimina"
+                                required="">
+                            <label for="first_name">Buscar</label>                            
+                    </div>  
+              
+                    </div> 
+                    <div class="row">                  
+                      <div class="input-field col s6 center-align">
+                         <button class="btn waves-effect waves-light" type="submit" name="btneliminar" value="formCrear">Eliminar
                         <i class="zmdi zmdi-mail-send"></i>
                         </button>
                     </div>

@@ -21,7 +21,7 @@
 			$json['imagenes'][]=$result;
 		}
 				
-		echo json_encode($json);		
+		echo json_encode($json,JSON_UNESCAPED_UNICODE);		
 	
 
 ?>
