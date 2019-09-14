@@ -29,6 +29,20 @@
 			 		window.location='Cteatro.php';			 
 			 		</script>";}
 
+	}else if(isset($_POST['btneliminar'])){
+			$resultado=mysqli_query($conexion,"SELECT id FROM cultura where id like '$_POST[txt_buscaridElimina]'");
+
+				if($fila=mysqli_fetch_array($resultado)){						
+						$resultado=mysqli_query($conexion,"DELETE FROM cultura  where id = '$_POST[txt_buscaridElimina]'");
+
+						echo "<script type='text/javascript'>
+			 		alert('Eliminado con exito');
+			 		window.location='CMusica.php';			 
+			 		</script>";
+				}else {echo "<script type='text/javascript'>
+			 		alert('Id no encontrado, verifique el id de la tabla');
+			 		window.location='CMusica.php';			 
+			 		</script>";}	
 	}
 
 

@@ -121,18 +121,18 @@
         <!-- Nav Info -->
         <div class="ContentPage-Nav full-width ">
             <ul class="full-width">
-                <li class="btn-MobileMenu ShowHideMenu"><a href="#" class="tooltipped waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Menu"><i class="zmdi zmdi-more-vert"></i></a></li>
+                <!--<li class="btn-MobileMenu ShowHideMenu"><a href="#" class="tooltipped waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Menu"><i class="zmdi zmdi-more-vert"></i></a></li>-->
                 <li><figure><img src="./../assets/img/user.png" alt="UserImage"></figure></li>
-                <li style="padding:0 5px;">Kevin santiago</li>
+                <li style="padding:0 5px;"><?php echo $_SESSION["Usuario_Activo"]?></li>
 
-                <li><a href="#" class="tooltipped waves-effect waves-light btn-ExitSystem" data-position="bottom" data-delay="50" data-tooltip="Logout"><i class="zmdi zmdi-power"></i></a></li>
+               <!-- <li><a href="#" class="tooltipped waves-effect waves-light btn-ExitSystem" data-position="bottom" data-delay="50" data-tooltip="Logout"><i class="zmdi zmdi-power"></i></a></li>
                 <li><a href="#" class="tooltipped waves-effect waves-light btn-Search" data-position="bottom" data-delay="50" data-tooltip="Search"><i class="zmdi zmdi-search"></i></a></li>
                 <li>
                     <a href="#" class="tooltipped waves-effect waves-light btn-Notification" data-position="bottom" data-delay="50" data-tooltip="Notifications">
                         <i class="zmdi zmdi-notifications"></i>
                         <span class="ContentPage-Nav-indicator bg-danger">2</span>
                     </a>
-                </li>
+                </li>-->
             </ul>   
         </div>
 
@@ -178,11 +178,64 @@
         </div>
 
                 <hr>
+                <?php
+                require_once("conexion.php");
+                $resultado=mysqli_query($conexion,"SELECT * FROM cultura where nombre='danza' ")                                 
+            ?>   
+
+            <script type="text/javascript">
+                               
+                
+                function mikevin(){
+                        var titulo=document.getElementById('txttitulobd').text;   
+                        var texto=document.getElementById('txttextobd').value;                                                 
+                        document.getElementById('txttitulo').value=titulo;
+                        document.getElementById('txttexto').value=texto;                                                
+                }
+
+            </script>
                 
        <div class="container">
             <div class="row">
                 <h2 class="center-align">Actualizar actividad</h2>
-                <form class="col s12" name="form_New_activity" method="post" action="CDanzaLogica.php">
+                <form class="col s12" name="form_New_activity" method="post" action="CDanzaLogica.php" enctype="multipart/form-data">
+                <div class="container" style="margin-bottom: 100px;"> 
+                    <div class="col s12">
+                        <table class="striped">
+                            <thead>
+                                <tr>
+                                    <th data-field="id">Id</th>
+                                    <th data-field="id">Titulo</th>
+                                    <th data-field="name">Texto</th>
+                                    <th data-field="price">Imagen</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <?php
+                                     while($fila=mysqli_fetch_array($resultado)){                                
+                                echo '<tr>';
+                                echo '<td id="txttextobd">'.$fila['id'].'</td>';
+                                    echo '<td><a href="#" id="txttitulobd" onclick="mikevin()">'.$fila['titulo'].'<a></td>';
+                                    echo '<td id="txttextobd">'.$fila['texto'].'</td>';
+                                    echo '<td>img</td>';
+                                echo '</tr>';
+                                }
+                                ?>                            
+                            </tbody>
+                        </table>
+                    </div>
+                </div><br>
+
+                        <div class="row">
+                        <div class="input-field col s6">
+                            <input placeholder="Escriba el id del la actividad a actualizar" id="txt_buscar" type="text" class="validate" maxlength="30" name="txt_buscarid"
+                                required="">
+                            <label for="first_name">Buscar</label>                            
+                        </div>  
+                    </div>
+
+
                     <div class="row">
                         <div class="input-field col s12">
                             <input placeholder="Escriba el titulo de 30 caracteres" id="first_name" type="text" class="validate" maxlength="30" name="txt_ActuActitulo"
@@ -219,6 +272,35 @@
                 </form>  
             </div>
         </div>
+
+            <hr>
+         <div class="container">
+            <div class="row">
+                <h2 class="center-align">Eliminar actividad</h2>
+                <form class="col s12" name="form_New_activity" method="post" action="CMusicaLogica.php" enctype="multipart/form-data">
+                    
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input placeholder="Escriba el id del la actividad a eliminar" id="txt_buscar" type="text" class="validate" maxlength="30" name="txt_buscaridElimina"
+                                required="">
+                            <label for="first_name">Buscar</label>                            
+                    </div>  
+              
+                    </div> 
+                    <div class="row">                  
+                      <div class="input-field col s6 center-align">
+                         <button class="btn waves-effect waves-light" type="submit" name="btneliminar" value="formCrear">Eliminar
+                        <i class="zmdi zmdi-mail-send"></i>
+                        </button>
+                    </div>
+
+                    </div>
+                </form>  
+            </div>
+        </div>
+
+
+
 
         <!-- Footer -->   
         <footer class="footer-MaterialDark">

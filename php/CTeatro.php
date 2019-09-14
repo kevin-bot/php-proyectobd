@@ -121,18 +121,18 @@
         <!-- Nav Info -->
         <div class="ContentPage-Nav full-width ">
             <ul class="full-width">
-                <li class="btn-MobileMenu ShowHideMenu"><a href="#" class="tooltipped waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Menu"><i class="zmdi zmdi-more-vert"></i></a></li>
+               <!-- <li class="btn-MobileMenu ShowHideMenu"><a href="#" class="tooltipped waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Menu"><i class="zmdi zmdi-more-vert"></i></a></li>-->
                 <li><figure><img src="./../assets/img/user.png" alt="UserImage"></figure></li>
-                <li style="padding:0 5px;">Kevin santiago</li>
+                <li style="padding:0 5px;"><?php echo $_SESSION["Usuario_Activo"]?></li>
 
-                <li><a href="#" class="tooltipped waves-effect waves-light btn-ExitSystem" data-position="bottom" data-delay="50" data-tooltip="Logout"><i class="zmdi zmdi-power"></i></a></li>
+                <!--<li><a href="#" class="tooltipped waves-effect waves-light btn-ExitSystem" data-position="bottom" data-delay="50" data-tooltip="Logout"><i class="zmdi zmdi-power"></i></a></li>
                 <li><a href="#" class="tooltipped waves-effect waves-light btn-Search" data-position="bottom" data-delay="50" data-tooltip="Search"><i class="zmdi zmdi-search"></i></a></li>
                 <li>
                     <a href="#" class="tooltipped waves-effect waves-light btn-Notification" data-position="bottom" data-delay="50" data-tooltip="Notifications">
                         <i class="zmdi zmdi-notifications"></i>
                         <span class="ContentPage-Nav-indicator bg-danger">2</span>
                     </a>
-                </li>
+                </li>-->
             </ul>   
         </div>
 
@@ -198,7 +198,7 @@
        <div class="container">
             <div class="row">
                 <h2 class="center-align">Actualizar actividad</h2>
-                <form class="col s12" name="form_New_activity" method="post" action="CMusicaLogica.php" enctype="multipart/form-data">
+                <form class="col s12" name="form_New_activity" method="post" action="CTeatroLogica.php" enctype="multipart/form-data">
 
                 <div class="container" style="margin-bottom: 100px;"> 
                     <div class="col s12">
@@ -272,16 +272,17 @@
                         </button>
                     </div>
 
-
                     </div>
                 </form>  
             </div>
         </div>
-        <hr>
+
+
+                <hr>
          <div class="container">
             <div class="row">
                 <h2 class="center-align">Eliminar actividad</h2>
-                <form class="col s12" name="form_New_activity" method="post" action="CMusicaLogica.php" enctype="multipart/form-data">
+                <form class="col s12" name="form_New_activity" method="post" action="CTeatroLogica.php" enctype="multipart/form-data">
                     
                     <div class="row">
                         <div class="input-field col s6">
@@ -302,7 +303,6 @@
                 </form>  
             </div>
         </div>
-
         <!-- Footer -->   
         <footer class="footer-MaterialDark">
             <div class="container">
