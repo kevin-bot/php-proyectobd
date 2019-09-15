@@ -2,7 +2,7 @@
 
 
 
-	$conexion=mysqli_connect("localhost","root","","proyectobd")
+	$conexion=mysqli_connect("localhost","root","","bienestar")
 
 	or die("No se puede conectar");
 

@@ -32,7 +32,7 @@
         <div class="NavLateral-content full-width ">
 
             <header class="NavLateral-title full-width center-align #d50000 red accent-4">
-                ADMINISTRACÍON <i class="zmdi zmdi-close NavLateral-title-btn ShowHideMenu"></i>
+                ADMINISTRACION <i class="zmdi zmdi-close NavLateral-title-btn ShowHideMenu"></i>
             </header>
 
             <figure class="full-width NavLateral-logo">
@@ -70,7 +70,7 @@
 
                         <ul class="full-width">
 
-                            <li><a href="DfutbolSala.php" class="waves-effect waves-light">Fútbol sala</a></li>
+                            <li><a href="DfutbolSala.php" class="waves-effect waves-light">Futbol sala</a></li>
                             <li class="NavLateralDivider"></li>
                             <li><a href="DBaloncesto.php" class="waves-effect waves-light">Baloncesto</a></li>
                             <li class="NavLateralDivider"></li>
@@ -84,14 +84,14 @@
                             <li class="NavLateralDivider"></li>
                             <li><a href="DAtletismo.php" class="waves-effect waves-light">Atletismo</a></li>
                             <li class="NavLateralDivider"></li>
-                            <li><a href="DFutbol.php" class="waves-effect waves-light">Fútbol</a></li>
+                            <li><a href="DFutbol.php" class="waves-effect waves-light">Futbol</a></li>
                         </ul>   
 
                     </li>
 
                     <li class="NavLateralDivider"></li>
                     <li>
-                        <a href="#" class="NavLateral-DropDown  waves-effect waves-light"><i class="zmdi zmdi-widgets zmdi-hc-fw"></i> <i class="zmdi zmdi-chevron-down NavLateral-CaretDown"></i> Exíto Academico</a>
+                        <a href="#" class="NavLateral-DropDown  waves-effect waves-light"><i class="zmdi zmdi-widgets zmdi-hc-fw"></i> <i class="zmdi zmdi-chevron-down NavLateral-CaretDown"></i> Exito Academico</a>
                         <ul class="full-width">
                             <li><a href="button.html" class="waves-effect waves-light">Uno</a></li>
                             <li class="NavLateralDivider"></li>
@@ -150,11 +150,11 @@
                     <div class="row">
                          <div class="file-field input-field">
                                <div class="btn">
-                                   <span>File</span>
+                                   <span>Imagen</span>
                                    <input type="file"  name="txt_nuevaAcImagen" multiple>
                                </div>
                               <div class="file-path-wrapper">
-                                   <input class="file-path validate" type="text" placeholder="Upload one or more files" required="">
+                                   <input class="file-path validate" type="text" placeholder="Sube uno o más archivos" required="">
                               </div>
                                </div>
                     </div>
@@ -206,7 +206,7 @@
                             <thead>
                                 <tr>
                                     <th data-field="id">Id</th>
-                                    <th data-field="id">Título</th>
+                                    <th data-field="id">Titulo</th>
                                     <th data-field="name">Texto</th>
                                     <th data-field="price">Imagen</th>
                                 </tr>
@@ -231,7 +231,7 @@
             
                     <div class="row">
                         <div class="input-field col s6">
-                            <input placeholder="Escriba el id del la actividad a actualizar" id="txt_buscar" type="text" class="validate" maxlength="30" name="txt_buscarid"
+                            <input placeholder="Escriba el id del la actividad a actualizar" id="txt_buscar" type="number" class="validate" maxlength="30" name="txt_buscarid"
                                 required="">
                             <label for="first_name">Buscar</label>                            
                         </div>  
@@ -244,17 +244,17 @@
                         <div class="input-field col s12">
                             <input placeholder="Escriba el titulo de 30 caracteres" id="first_name" type="text" class="validate" maxlength="30" name="txt_ActuActitulo"
                                 required="">
-                            <label for="first_name">Título</label>
+                            <label for="first_name">Titulo</label>
                         </div>                    
                     </div>
                     <div class="row">
                          <div class="file-field input-field">
                                <div class="btn">
-                                   <span>File</span>
+                                   <span>Imagen</span>
                                    <input type="file"  name="txt_ActuAcImagen" multiple required="">
                                </div>
                               <div class="file-path-wrapper">
-                                   <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                                   <input class="file-path validate" type="text" placeholder="Sube uno o más archivos">
                               </div>
                                </div>
                     </div>
@@ -286,7 +286,7 @@
                     
                     <div class="row">
                         <div class="input-field col s6">
-                            <input placeholder="Escriba el id del la actividad a eliminar" id="txt_buscar" type="text" class="validate" maxlength="30" name="txt_buscaridElimina"
+                            <input placeholder="Escriba el id del la actividad a eliminar" id="txt_buscar" type="number" class="validate" maxlength="30" name="txt_buscaridElimina"
                                 required="">
                             <label for="first_name">Buscar</label>                            
                     </div>  
@@ -329,7 +329,7 @@
             <div class="NavLateralDivider"></div>
             <div class="footer-copyright">
                 <div class="container center-align">
-                    © 2016 Carlos Eduardo Alfaro Orellana
+                    © 2013 Sistemas 4
                 </div>
             </div>
         </footer>
